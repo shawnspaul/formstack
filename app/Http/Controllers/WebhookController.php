@@ -15,7 +15,7 @@ class WebhookController extends Controller
         $submission->name = $request->Name;
         $submission->email = $request->Email;
         $submission->prog_lang = $request->Preferred_Programming_Language;
-        $submission->tv_show = $request->What_is_your_favorite_TV_show;
+        $submission->tv_show = $request->Favorite_TV_Show;
         $submission->save();
     }
 }
