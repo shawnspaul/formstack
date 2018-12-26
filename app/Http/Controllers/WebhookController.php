@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Log;
 class WebhookController extends Controller
 {
     public function submission(Request $request) {
+        //logging post to find parameter names
         Log::info('INFO:'.json_encode($request->all()));
 
         $submission = new Submissions();
